@@ -25,6 +25,7 @@ const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId]);
 
   const { image, title, price, category, description } = product;
